@@ -140,3 +140,81 @@ for(let i=0;i<7;i++){
     answer+=characters.charAt(Math.floor(Math.random()*length))
 }
 console.log(answer)
+
+//11.Using the above countries array, create the following new array.
+
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+
+const answerArray=[]
+
+for(let i=0;i<countries.length;i++){
+    answerArray.push(countries[i].toUpperCase())
+}
+
+console.log(answerArray)
+
+//12.Use the countries array to create the following array of arrays:
+
+const arrayOfArrays=[]
+
+for(let i=0;i<countries.length;i++){
+    let fill=[]
+    fill.push(countries[i])
+    fill.push(countries[i].substr(0,3).toUpperCase())
+    fill.push(countries[i].length)
+    arrayOfArrays.push(fill)
+}
+console.log(arrayOfArrays)
+
+//13.In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+
+let landArray=[]
+
+for(let i=0;i<countries.length;i++){
+    if(countries[i].includes('land')){
+        landArray.push(countries[i])
+    }
+}
+if(landArray.length==0){
+    console.log('All these countries are without land')
+}
+else{
+    console.log(landArray)
+}
+
+//14.Using the above countries array, find the country containing the biggest number of characters.
+
+let maxLength=0
+let maxLenString=''
+for(let i=0;i<countries.length;i++){
+    if(maxLength<countries[i].length){
+        maxLength=countries[i].length
+        maxLenString=countries[i]
+    }
+}
+console.log(maxLenString)
+
+//15.Print all the elements of array as shown below.
+
+  const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ]
+
+  for(let i=0;i<fullStack.length;i++){
+      for(let j=0;j<fullStack[i].length;j++){
+          console.log(fullStack[i][j])
+      }
+  }
