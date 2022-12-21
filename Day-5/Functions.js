@@ -55,3 +55,30 @@ console.log(areaOfRectangle(20,30))
 // let index=calculateBMI(weight,height)
 // checkBMI(index)
 // console.log(index)
+
+//5.Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+
+function findMax(a,b,c){
+
+    if(a>b || a>c){
+        return a;
+    }
+    else if(b>a || b>c){
+        return b;
+    }
+    else{
+        return c;
+    }
+}
+console.log(findMax(0,-10,-2))
+
+//6.Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+function reverseArray(arr){
+    let array=Array();
+    for(let i=arr.length-1;i>=0;i--){
+        array.push(arr[i])
+    }
+    return array;
+}
+console.log(reverseArray([1,2,3,4,5]))
