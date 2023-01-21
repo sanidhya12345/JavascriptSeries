@@ -1,1 +1,1 @@
-# JavascriptSeries
+# Javascript-Series

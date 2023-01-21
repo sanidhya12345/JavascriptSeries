@@ -1,0 +1,202 @@
+Booleans:-
+A boolean data type represents one of the two values:true or false. Boolean value is either true or false. The use of these data types will be clear when you start the comparison operator. Any comparisons return a boolean value which is either true or false.
+
+Truthy Values:-
+
+1.All numbers(positive and negative) are truthy except zero
+2.All strings are truthy except an empty string ('')
+3.The boolean true
+
+Falsy Values:-
+
+1.0
+2.0n
+3.null
+4.undefined
+5.NaN
+6.the boolean false
+7.'', "", ``, empty string
+
+Operators:-
+
+1.Assignment Operators:-
+
+An equal sign in JavaScript is an assignment operator. It uses to assign a variable.
+
+=
++=
+-=
+*=
+/=
+%=
+**=
+
+2.Arithmetic Operators:-
+
+->Addition(+): a + b
+->Subtraction(-): a - b
+->Multiplication(*): a * b
+->Division(/): a / b
+->Modulus(%): a % b
+->Exponential(**): a ** b
+
+3.Comparison Operators:-
+In programming we compare values, we use comparison operators to compare two values. We check if a value is greater or less or equal to other value.
+
+-> == (equal in value only:Equivalent)
+-> ===(equal in value and data type:Exactly equal)
+-> !=(not equal)
+-> >(greater than)
+-> <(less than)
+-> >=(greater than or equal to)
+-> <=(less than or equal to)
+
+4.Logical Operators:-
+The following symbols are the common logical operators: &&(ampersand) , ||(pipe) and !(negation). The && operator gets true only if the two operands are true. The || operator gets true either of the operand is true. The ! operator negates true to false and false to true.
+
+// && ampersand operator example
+
+const check = 4 > 3 && 10 > 5         // true && true -> true
+const check = 4 > 3 && 10 < 5         // true && false -> false
+const check = 4 < 3 && 10 < 5         // false && false -> false
+
+// || pipe or operator, example
+
+const check = 4 > 3 || 10 > 5         // true  || true -> true
+const check = 4 > 3 || 10 < 5         // true  || false -> true
+const check = 4 < 3 || 10 < 5         // false || false -> false
+
+//! Negation examples
+
+let check = 4 > 3                     // true
+let check = !(4 > 3)                  //  false
+let isLightOn = true
+let isLightOff = !isLightOn           // false
+let isMarried = !false          
+
+
+5.Increment Operator:-
+In JavaScript we use the increment operator to increase a value stored in a variable. The increment could be pre or post increment. Let us see each of them:
+
+->Pre-increment
+let count = 0
+console.log(++count)        // 1
+console.log(count)          // 1
+
+->Post-increment
+let count = 0
+console.log(count++)        // 0
+console.log(count)          // 1
+
+6.Decrement Operator
+In JavaScript we use the decrement operator to decrease a value stored in a variable. The decrement could be pre or post decrement. Let us see each of them:
+
+->Pre-decrement
+let count = 0
+console.log(--count) // -1
+console.log(count)  // -1
+
+->Post-decrement
+let count = 0
+console.log(count--) // 0
+console.log(count)   // -1
+
+7.Ternary Operators
+Ternary operator allows to write a condition. Another way to write conditionals is using ternary operators. Look at the following examples:
+
+let isRaining = true
+isRaining
+  ? console.log('You need a rain coat.')
+  : console.log('No need for a rain coat.')
+isRaining = false
+
+isRaining
+  ? console.log('You need a rain coat.')
+  : console.log('No need for a rain coat.')
+You need a rain coat.
+No need for a rain coat.
+let number = 5
+number > 0
+  ? console.log(`${number} is a positive number`)
+  : console.log(`${number} is a negative number`)
+number = -5
+
+number > 0
+  ? console.log(`${number} is a positive number`)
+  : console.log(`${number} is a negative number`)
+
+
+
+--->Window Methods:-
+
+
+1.Window alert() method:-
+
+alert('hi this is sanidhya')
+
+2.Window prompt() method:-
+
+prompt('required text','optional text')
+
+example:-
+
+let number=prompt('Enter number','number goes here')
+
+console.log(number)
+
+3.Window confirm() method:-
+The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button. A confirm box is often used to ask permission from a user to execute something. Window confirm() takes a string as an argument. Clicking the OK yields true value, whereas clicking the Cancel button yields false value.
+
+const agree = confirm('Are you sure you like to delete? ')
+console.log(agree)
+
+--->Date Object:-
+
+Time is an important thing. We like to know the time a certain activity or event. In JavaScript current time and date is created using JavaScript Date Object. The object we create using Date object provides many methods to work with date and time.The methods we use to get date and time information from a date object values are started with a word get because it provide the information. getFullYear(), getMonth(), getDate(), getDay(), getHours(), getMinutes, getSeconds(), getMilliseconds(), getTime(), getDay()
+
+
+Creating a time object:-
+
+const now =new Date();
+console.log(now)
+
+Getting full year:-
+
+const now=new Date()
+console.log(now.getFullYear())
+
+Getting month:-
+
+const now=new Date()
+console.log(now.getMonth())
+
+Getting date:-
+
+const now=new Date()
+console.log(now.getDate())
+
+Getting day:-
+
+const now=new Date()
+console.log(now.getDay())
+
+Getting hours:-
+
+const now=new Date()
+console.log(now.getHours())
+
+Getting minutes:-
+
+const now=new Date()
+console.log(now.getMinutes())
+
+Getting seconds:-
+
+const now=new Date()
+console.log(now.getSeconds())
+
+Getting time:-
+
+const now=new Date()
+console.log(now.getTime())
+
